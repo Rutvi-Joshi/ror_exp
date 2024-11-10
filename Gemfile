@@ -25,6 +25,17 @@ gem "jbuilder"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
+gem 'devise', '~> 4.9.0'
+gem 'jwt'
+gem 'dry-configurable'
+gem 'will_paginate', '~> 3.3.0'
+gem 'rolify'
+gem "pundit"
+gem 'rswag-api', '~> 2.3'
+gem 'rswag-ui', '~> 2.3'
+gem 'swagger-blocks', '~> 3.0'
+gem 'pry-byebug', '~> 3.10', '>= 3.10.1'
+gem 'simple_command'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
@@ -36,6 +47,8 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
+  gem 'rspec-rails', '~> 5.0'
+  
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
